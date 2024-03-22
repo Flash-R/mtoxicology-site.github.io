@@ -119,18 +119,30 @@ ion-icon {
 }
 
 button,
-input {
+input,
+textarea {
   background: none;
   border: none;
   font: inherit;
+}
+input,
+textarea{
+  border: 1px solid;
+  margin: 1rem 0rem;
+  font-size: 2rem;
+  padding: .4rem .7rem;
 }
 
 button {
   cursor: pointer;
 }
 
-input {
+input,textarea {
   width: 100%;
+}
+
+input:focus{
+  outline: none;
 }
 
 ion-icon {
@@ -699,8 +711,28 @@ body {
   margin-inline-start: auto;
 }
 
+/*-----------------------------------*\
+  #Contactt Page
+\*-----------------------------------*/
+.contact-address-top{
+  width: 80vw;
+  margin: 1.5rem auto;
+  padding: .4rem;
 
-
+}
+.contact-address-top .address{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-address-top .container{
+  display: flex;
+  margin: 2rem 0rem;
+}
+.contact-address-top .form{
+  width: 500px;
+  margin-right: 3rem;
+  padding: 1rem;
+}
 
 
 /*-----------------------------------*\
